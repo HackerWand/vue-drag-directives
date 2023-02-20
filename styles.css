@@ -1,0 +1,21 @@
+/* 
+ * Author: hackerwand
+ * Email: heipi@hackerwand.com
+ * Date: Mon Feb 20 2023
+ */
+ .vue-drag-directives.dragover::after {
+  content: attr(data-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  position: absolute;
+  border: 1px dotted #EEE;
+  color: #FFF;
+  background-color: rgba(47, 91, 234, .2);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
