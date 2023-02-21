@@ -1,6 +1,7 @@
 import './styles.css'
 function onDrop (e) {
   e.preventDefault()
+  this.classList.remove("dragover")
   this.dispatchEvent(new CustomEvent('file-drag', {
     detail:{
       files: e.dataTransfer.files
